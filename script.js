@@ -4,6 +4,7 @@ const btn = document.getElementById('btn');
 
 btn.addEventListener('click', getAdvice);
 
+// Fetch data and display in to the dom
 function getAdvice() {
   fetch('https://api.adviceslip.com/advice')
     .then((res) => res.json())
